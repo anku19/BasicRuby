@@ -1,0 +1,16 @@
+#hashes are arrays but their indexes are defined by user not by ruby interpreter
+mark = Hash.new
+mark['English'] = 50
+mark['Math'] = 70
+mark['Science'] = 75
+print "Enter subject name:"
+sub = gets.chop
+puts "Mark in #{sub} is #{mark[sub]}"
+
+
+=begin
+Output:
+C:\Users\USER\Desktop>ruby hash.rb
+Enter subject name:Math
+Mark in Math is 70
+=end
