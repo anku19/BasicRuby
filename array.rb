@@ -5,7 +5,7 @@ my_array << "Ank"
 my_array << 148
 my_array << Time.now
 
-my_array.each do |element|
+my_array.each do |element|   #or : for element in my_array
 print element 
 end
 
