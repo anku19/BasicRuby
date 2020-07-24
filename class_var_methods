@@ -1,0 +1,30 @@
+class Robot
+	def initialize 	
+		if defined?(@@robo_count)
+			@@robo_count +=1
+		else
+			@@robo_count = 1
+		end
+	end
+
+	def self.robo_create
+		@@robo_count
+	end
+end
+
+r1 = Robot.new
+r2 = Robot.new
+puts "Created #{Robot.robo_create} robots"
+r3, r4, r5 = Robot.new, Robot.new, Robot.new
+puts "Created #{Robot.robo_create} robots"
+r8, r9, r10 = Robot.new, Robot.new, Robot.new
+puts "Created #{Robot.robo_create} robots"
+
+
+=begin
+Output:
+C:\Users\USER\Desktop>ruby class_var_method.rb
+Created 2 robots
+Created 5 robots
+Created 8 robots
+=end
